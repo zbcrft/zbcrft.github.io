@@ -14,6 +14,10 @@
     font-weight: 900;
 }
 
+.hyperlink{
+    text-decoration: none;
+}
+
 header .text{
     color: #7f839c;
 }
