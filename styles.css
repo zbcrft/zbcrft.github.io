@@ -90,6 +90,7 @@ html, body {
 }
 
 .script {
+    overflow-x: auto;
     height: calc(100% - 22px);
 }
 
