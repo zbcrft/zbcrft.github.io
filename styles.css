@@ -164,6 +164,8 @@ html, body {
 }
 
 .output {
+    overflow-x: scroll;
+    white-space: nowrap;
     height: auto;
 }
 
