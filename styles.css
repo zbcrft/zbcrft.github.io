@@ -90,7 +90,8 @@ html, body {
 }
 
 .script {
-    overflow-x: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
     height: calc(100% - 22px);
 }
 
