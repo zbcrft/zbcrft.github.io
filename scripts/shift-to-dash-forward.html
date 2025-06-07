@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>zbcrft</title>
+</head>
+<body>
+    <div class="widget" style="height:100%">
+        <header>
+            <img class="localscript-icon" src="../src/localscript-icon.png">
+            <h5>shift-to-dash-forward.lua</h5>
+        </header>
+        <div class="script">
+            <div class="numbers">
+                1<br>
+                2<br>
+                3<br>
+                4<br>
+                5<br>
+                6<br>
+                7<br>
+                8<br>
+                9<br>
+                10<br>
+                11<br>
+                12<br>
+                13<br>
+            </div>
+            <div class="breakpoints"></div>
+            <div class="content">
+                <p class="red">local function</p> <p class="yellow">InputBegan</p>(InputObject : <p class="cyan">InputObject</p>)<br>
+	            <p class="tab"></p><p class="red">if</p> <p class="cyan">table.find</p>({<p class="cyan">Enum.KeyCode</p>.<p class="blue">LeftControl</p>, <p class="cyan">Enum.KeyCode</p>.<p class="blue">RightControl</p>}, InputObject.<p class="blue">KeyCode</p>) <p class="red">then</p><br>
+		        <p class="tab"></p><p class="tab"></p><p class="red">local</p> PrimaryPart = <p class="cyan">game</p>.<p class="blue">Players</p>.<p class="blue">LocalPlayer</p>.<p class="blue">Character</p>.<p class="blue">PrimaryPart</p><br>
+                <br>
+		        <p class="tab"></p><p class="tab"></p><p class="red">if not</p> PrimaryPart <p class="red">then</p><br>
+			    <p class="tab"></p><p class="tab"></p><p class="tab"></p><p class="red">return</p><br>
+		        <p class="tab"></p><p class="tab"></p><p class="red">end</p><br>
+                <br>
+		        <p class="tab"></p><p class="tab"></p>PrimaryPart.<p class="blue">AssemblyLinearVelocity</p> = PrimaryPart.<p class="blue">AssemblyLinearVelocity</p> + PrimaryPart.<p class="blue">CFrame</p>.<p class="blue">LookVector</p> * <p class="orange">100</p><br>
+	            <p class="tab"></p><p class="red">end</p><br>
+                <p class="red">end</p><br>
+                <br>
+                <p class="cyan">game</p>.<p class="blue">UserInputService</p>.<p class="blue">InputBegan</p>:<p class="yellow">Connect</p>(InputBegan)
+            </div>
+        </div>
+    </div>
+</body>
+</html>

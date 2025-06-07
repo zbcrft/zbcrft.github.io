@@ -1,0 +1,246 @@
+html, body {
+    margin: 0;
+    height:100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid black;
+    background-color: #3b3b3b;
+}
+
+.topbar {
+    margin:15px;
+    width: calc(100% - 30px);
+    height: 20px;
+}
+
+.topbar h5 {
+    margin : 0;
+    padding : 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.topbar .right {
+    float: right;
+    margin-left: 30px;
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+.topbar .left {
+    float: left;
+    font-family: monospace;
+}
+
+.roblox-studio-icon {
+    width:20px;
+    height:20px;
+    margin-right: 6px;
+}
+
+.localscript-icon {
+    width:20px;
+    height:20px;
+}
+
+
+.gray-text {
+    color: gray;
+}
+
+.widget {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+}
+
+.widget header {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(70, 70, 70);
+    margin: auto;
+    border: 1px solid #2b2b2b;
+}
+
+.widget header h5 {
+    vertical-align: middle;
+    margin: auto;
+    display: inline-block;
+    color:rgb(170, 170, 170);
+    font-family: Arial;
+    font-weight: lighter;
+}
+
+.widget header img {
+    vertical-align: middle;
+    margin: auto;
+    display: inline-block;
+}
+
+.script {
+    height: calc(100% - 22px);
+}
+
+.script .numbers {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: right;
+    width: 20px;
+    padding-right: 10px;
+    height: 100%;
+    padding-left: 10px;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    background-color: rgb(40, 40, 40);
+}
+
+.script .breakpoints {
+    vertical-align: middle;
+    margin-left: -5px;
+    display: inline-block;
+    width: 20px;
+    background-color: rgb(60, 60, 60);
+    height: 100%;
+}
+
+.script .content {
+    vertical-align: top;
+    display: inline-block;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.script .content p {
+    display : inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.script .content .red {
+    color: rgb(248, 109, 124);
+    font-weight: bold;
+}
+
+.script .content .yellow {
+    color: rgb(253, 251, 172);
+}
+
+.script .content .orange {
+    color: rgb(255, 198, 0);
+}
+
+.script .content .green {
+    color: rgb(173, 241, 149);
+}
+
+.script .content .cyan {
+    color: rgb(0, 255, 255);
+}
+
+.script .content .blue {
+    color: rgb(97, 161, 241);
+}
+
+.script .content .tab {
+    padding-left: 36px;
+}
+
+.output {
+    height: auto;
+}
+
+.output .client {
+    display: inline-block;
+    width: 10px;
+    height:350px;
+    background-color: rgb(104, 182, 255);
+}
+
+.output .timestamps {
+    color: rgb(155, 155, 155);
+    font-family: monospace;
+    font-size: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.output .content {
+    color: rgb(204, 204, 204);
+    font-family: monospace;
+    font-size: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.output .content p {
+    display : inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.output .content .tab {
+    padding-left: 36px;
+    margin: 0;
+}
+
+.showcase-image {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: 200px;
+}
+
+.absolute-p  {
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    right: 5px;
+}
+
+.section {
+    margin-left: 30px;
+    padding: 5px;
+    background-color: #3b3b3b;
+}
+
+.section p {
+    position: absolute;
+    vertical-align: top;
+}
+
+.section-inner {
+    padding-top: 20px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.source {
+    color: white;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.source a {
+    text-decoration: none;
+    color : cyan;
+}
