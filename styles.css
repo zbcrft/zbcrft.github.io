@@ -6,12 +6,12 @@ html, body {
 
 ::-webkit-scrollbar-track {
     width: 5px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(46, 46, 46);
 }
 
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(46, 46, 46);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -94,30 +94,7 @@ html, body {
 .script {
     overflow-x: scroll;
     white-space: nowrap;
-    height: calc(100% - 22px);
-}
-
-.script .numbers {
-    vertical-align: middle;
-    display: inline-block;
-    text-align: right;
-    width: 20px;
-    padding-right: 10px;
-    height: 100%;
-    padding-left: 10px;
-    margin: 0;
-    color: white;
-    font-family: sans-serif;
-    background-color: rgb(40, 40, 40);
-}
-
-.script .breakpoints {
-    vertical-align: middle;
-    margin-left: -5px;
-    display: inline-block;
-    width: 20px;
-    background-color: rgb(60, 60, 60);
-    height: 100%;
+    height: calc(100% - 36px);
 }
 
 .script .content {
@@ -125,7 +102,7 @@ html, body {
     display: inline-block;
     color: lightgray;
     font-family: monospace;
-    font-size: 15px;
+    font-size:xx-large;
 }
 
 .script .content p {
@@ -166,27 +143,26 @@ html, body {
 }
 
 .output {
-    overflow-x: scroll;
-    white-space: nowrap;
     height: auto;
 }
 
-.output .client {
+.output .content .timestamps {
+    padding-left: 5px;
+    vertical-align: top;
+    height: 1em;
     display: inline-block;
-    width: 10px;
-    height:350px;
-    background-color: rgb(104, 182, 255);
-}
-
-.output .timestamps {
     color: rgb(155, 155, 155);
     font-family: monospace;
     font-size: 15px;
-    vertical-align: top;
-    display: inline-block;
 }
 
 .output .content {
+    border-style: solid;
+    border-width: 10px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-right: 10px;
+    border-color: rgb(104, 182, 255);
     color: rgb(204, 204, 204);
     font-family: monospace;
     font-size: 15px;
@@ -215,13 +191,16 @@ html, body {
 }
 
 .absolute-p  {
-    color: #000000;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
     right: 5px;
+    bottom: 15px;
 }
 
 .section {
+    width: fit-content;
     margin-left: 30px;
     padding: 5px;
     background-color: #3b3b3b;
