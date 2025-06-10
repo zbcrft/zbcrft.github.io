@@ -102,7 +102,13 @@ html, body {
     display: inline-block;
     color: lightgray;
     font-family: monospace;
-    font-size:xx-large;
+    font-size:3vw;
+}
+
+@media screen and (min-width: 1200px) {
+  .script .content {
+     font-size: 36px;
+  }
 }
 
 .script .content p {
@@ -227,4 +233,11 @@ html, body {
 .source a {
     text-decoration: none;
     color : cyan;
+}
+
+.underline {
+    border: dashed, 2px, rgba(231, 156, 56, 0.5);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
