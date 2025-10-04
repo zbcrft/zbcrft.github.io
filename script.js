@@ -30,12 +30,42 @@ projects.forEach(element => {
         id = 'id="project-last"'
     }
 
-    body.innerHTML += `<div class="project" ${id}>
-            <img src="${element.Thumbnail}">
-            <div>
+    var mirror = ''
+
+    if (count % 2 == 0) {
+        mirror = 'project-mirror'
+    }
+
+    var firstPart = ''
+    var secondPart = ''
+
+    if (mirror) {
+        firstPart = `<div>
                 <span class="project-title">${element.Title}</span>
                 <br>
                 <span class="project-description">${element.Description}</span>
-            </div>
+            </div>`
+        secondPart = `<img src="${element.Thumbnail}">`
+    } else {
+        firstPart = `<img src="${element.Thumbnail}">`
+        secondPart = `<div>
+                <span class="project-title">${element.Title}</span>
+                <br>
+                <span class="project-description">${element.Description}</span>
+            </div>`
+    }
+
+    if (window.innerWidth <= 1000) {
+        firstPart = `<img src="${element.Thumbnail}">`
+        secondPart = `<div>
+                <span class="project-title">${element.Title}</span>
+                <br>
+                <span class="project-description">${element.Description}</span>
+            </div>`
+    }
+
+    body.innerHTML += `<div class="project ${mirror}" ${id}>
+            ${firstPart}
+            ${secondPart}
         </div>`
 });
