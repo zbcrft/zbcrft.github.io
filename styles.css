@@ -127,3 +127,22 @@ body {
     font-style: italic;
     font-weight: 200;
 }
+
+@media screen and (max-width: 1000px) {
+    #title-box {
+        display: none;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project div {
+        padding-top: 1vh;
+        width: calc(100% - 40px);
+    }
+
+    .project {
+        height: fit-content;
+    }
+}
