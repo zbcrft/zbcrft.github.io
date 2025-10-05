@@ -1,14 +1,5 @@
 const body = document.getElementById("body")
 
-const projectHtml = `<div class="project" %s>
-            <img src="%s">
-            <div>
-                <span class="project-title">%s</span>
-                <br>
-                <span class="project-description">%s</span>
-            </div>
-        </div>`
-
 const projects = [
     {
         Thumbnail: "assets/thumbnails/DailyRewards.png",

@@ -16,10 +16,12 @@ body {
 #title-box {
     margin-top: -15px;
     position: absolute;
+    z-index: -1;
     
     border: 1px, solid;
     border-image: linear-gradient(to left, #999999 80%, #FFFFFF) 1;
-    
+    background-color: #181818;
+
     width: 392px;
     height: 96px;
 }
@@ -57,6 +59,7 @@ body {
     border: 1px, solid;
     border-bottom: 0px;
     border-image: linear-gradient(315deg, #999999 80%, #FFFFFF) 1;
+    background-color: #181818;
     
     width: calc(100% - 120px);
     height: calc(100vh - 231px);
