@@ -17,8 +17,6 @@ projects.forEach(element => {
 
     if (count == 1) {
         id = 'id="project-first"'
-    } else if (count == projects.length) {
-        id = 'id="project-last"'
     }
 
     var mirror = ''

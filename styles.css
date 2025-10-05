@@ -66,12 +66,12 @@ body {
 }
 
 .project {
-    margin-bottom: 60px;
     padding-top: 20px;
 
     border: 1px, solid, #FFFFFF;
     border-left: 0px;
     border-right: 0px;
+    border-top: 0px;
 
     width: 100%;
     height: 310px;
@@ -108,11 +108,6 @@ body {
 
 #project-first {
     border-top: 0px;
-}
-
-#project-last {
-    border-bottom: 0px;
-    margin-bottom: 0px;
 }
 
 .project-title {
