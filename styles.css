@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+}
+
+.horizontal-list * {
+    display: inline-block;
+}
+
+.video-scroller .panel .panel-video {
+    width: 400px;
+    height: 250px;
+}
+
+@media screen and (max-width: 420px) {
+    .horizontal-scroller .panel .panel-video {
+        width: calc(100vw - 20px);
+        height: calc((100vw - 10px) * 0.625);
+    }
+}
