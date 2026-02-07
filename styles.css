@@ -7,18 +7,59 @@ body {
     margin: 10px;
 }
 
+.horizontal-list {
+    width: calc(100vw - 20px);
+    display: flex;
+    justify-content: safe center;
+    align-items: safe center;
+}
+
 .horizontal-list * {
     display: inline-block;
 }
 
-.video-scroller .panel .panel-video {
+#video-scroller {
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 290px;
+}
+
+#video-scroller .panel {
+    margin-right: 5px;
+}
+
+#video-scroller .panel .panel-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#video-scroller .panel .panel-video {
     width: 400px;
     height: 250px;
 }
+
+#video-scroller-buttons button {
+    width: 50px;
+    height: 50px;
+}
+
+#video-scroller-buttons #left {
+    margin-right: 5px;
+}
+
+#video-scroller-buttons #right {
+    margin-left: 5px;
+}
+
 
 @media screen and (max-width: 420px) {
     .horizontal-scroller .panel .panel-video {
         width: calc(100vw - 20px);
         height: calc((100vw - 10px) * 0.625);
+    }
+
+    #video-scroller {
+        height: calc((100vw - 10px) * 0.625 + 40px);
     }
 }
